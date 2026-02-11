@@ -146,7 +146,7 @@ dma_display->color565(0, 0, 0)
 
 - Define your globals statically and within your .cpp file, not the .h file! Don't clog up the global name space of the entire project!!!
 
-### 4. Add your function to demo.h
+### 4. Add your demo header to demo.h
 Alright, now that you're done, you're almost there! You will see in the demo.h file a list formatted in this way:
 ```
 //Place your demo's .h file in here!!
@@ -160,7 +160,7 @@ Simply add your own .h file in as such:
 #include "../<name of header file>.h"
 ``
 
-### 5. Add your function to demo.cpp
+### 5. Add your demo to demo.cpp
 Final step! See demo.cpp, it will have a list such as the following:
 ```
 std::vector<Demo> demos = {
