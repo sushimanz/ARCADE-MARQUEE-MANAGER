@@ -5,7 +5,7 @@ using std::array;
 
 extern MatrixPanel_I2S_DMA *dma_display;
 
-uint8_t colorOffset = 0;
+static uint8_t colorOffset = 0;
 
 static uint16_t pxX[PANEL_TOTAL_X];
 static uint16_t pxY[PANEL_RES_Y];

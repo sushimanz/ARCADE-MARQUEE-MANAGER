@@ -5,8 +5,8 @@
 extern MatrixPanel_I2S_DMA *dma_display;
 extern uint16_t myBLACK;
 
-float ballPos[2] = {30,30};
-float ballVel[2] = {1.4,1.4};
+static float ballPos[2] = {30,30};
+static float ballVel[2] = {1.4,1.4};
 static uint16_t colorPos = 0;
 
 //A bouncing, strobing ball.

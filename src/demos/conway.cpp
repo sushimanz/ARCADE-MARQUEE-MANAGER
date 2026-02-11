@@ -5,11 +5,8 @@ extern MatrixPanel_I2S_DMA *dma_display;
 extern uint16_t myBLACK;
 extern uint16_t myWHITE;
 
-
-
-
-uint8_t con_buf[PANEL_TOTAL_X][PANEL_RES_Y];
-uint8_t con_cur[PANEL_TOTAL_X][PANEL_RES_Y];
+static uint8_t con_buf[PANEL_TOTAL_X][PANEL_RES_Y];
+static uint8_t con_cur[PANEL_TOTAL_X][PANEL_RES_Y];
 
 void conway(){
   for(uint16_t x = 0; x < PANEL_TOTAL_X; x++){
@@ -83,6 +80,8 @@ int conway_count(int x, int y){
 }
 
 void resetConway(){
+  memset(con_buf, 0, sizeof(con_buf));
+  memset(con_cur, 0, sizeof(con_cur));
   for(int x = 0; x < PANEL_TOTAL_X; x++){
     for(int y = 0; y < PANEL_RES_Y; y++){
       con_cur[x][y] = random()%2;

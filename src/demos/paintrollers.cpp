@@ -11,7 +11,7 @@ extern uint16_t myWHITE;
 
 
 
-std::vector<uint32_t> colors = {
+static std::vector<uint32_t> colors = {
     0xE63946, // Soft Red
     0xA8DADC, // Pale Cyan
     0x457B9D, // Steel Blue
@@ -36,7 +36,7 @@ struct roller {
     uint16_t color;
     uint8_t direction; // 0: down, 1: up, 2: left, 3: right
 };
-std::list<roller> rollers;
+static std::list<roller> rollers;
 
 void paint_rollers(){
     dma_display->setTextWrap(false);

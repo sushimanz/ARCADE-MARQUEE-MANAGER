@@ -24,10 +24,10 @@ MatrixPanel_I2S_DMA *dma_display = nullptr;
 uint16_t myBLACK = dma_display->color565(0, 0, 0);
 uint16_t myWHITE = dma_display->color565(255, 255, 255);
 
-uint8_t bag[20];   // adjust if more than 20 demos
-uint8_t bagSize = 0;
-uint8_t currentDemo = 0;
-unsigned long demoStartTime = 0;
+static uint8_t bag[20];   // adjust if more than 20 demos
+static uint8_t bagSize = 0;
+static uint8_t currentDemo = 0;
+static unsigned long demoStartTime = 0;
 
 void refillBag() {
     bagSize = demos.size();
@@ -72,9 +72,6 @@ void setup() {
   dma_display->setBrightness8(255); //0-255
   dma_display->clearScreen();
   dma_display->fillScreen(myBLACK);
-
-  memset(con_buf, 0, sizeof(con_buf));
-  memset(con_cur, 0, sizeof(con_cur));
 
   refillBag();
   currentDemo = drawFromBag();

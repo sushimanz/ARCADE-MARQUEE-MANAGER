@@ -22,8 +22,6 @@ struct Snake {
     bool death = false;
 };
 
-extern std::list<Snake> snakes;
-
 void snake();
 void resetSnake();
 

@@ -4,12 +4,12 @@
 
 extern MatrixPanel_I2S_DMA *dma_display;
 
-uint8_t textstart = (uint8_t)PANEL_TOTAL_X;
-uint8_t borderx = (uint8_t)(PANEL_TOTAL_X/2);
-uint16_t color;
-uint8_t colorPos1 = 0;
-int changeNum = 0;
-int randNum = 1;
+static uint8_t textstart = (uint8_t)PANEL_TOTAL_X;
+static uint8_t borderx = (uint8_t)(PANEL_TOTAL_X/2);
+static uint16_t color;
+static uint8_t colorPos1 = 0;
+static int changeNum = 0;
+static int randNum = 1;
 
 void startIEEE(){
   

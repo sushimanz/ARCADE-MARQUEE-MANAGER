@@ -6,12 +6,12 @@ extern MatrixPanel_I2S_DMA *dma_display;
 extern uint16_t myBLACK;
 extern uint16_t myWHITE;
 
-uint8_t currText = 0;
-int scrollPos = PANEL_TOTAL_X+1;  // Start off-screen to the right
-uint8_t colorPos = 0;
-uint8_t danceOffset = 0;
-bool endcond = false;
-uint8_t danceAmplitude = 6;    // pixels (increase to make the characters bounce higher)
+static uint8_t currText = 0;
+static int scrollPos = PANEL_TOTAL_X+1;  // Start off-screen to the right
+static uint8_t colorPos = 0;
+static uint8_t danceOffset = 0;
+static bool endcond = false;
+static uint8_t danceAmplitude = 6;    // pixels (increase to make the characters bounce higher)
 
 void startUB(){
   UB(colorPos);

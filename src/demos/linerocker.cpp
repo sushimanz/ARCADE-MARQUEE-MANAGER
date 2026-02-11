@@ -5,12 +5,12 @@
 extern MatrixPanel_I2S_DMA *dma_display;
 extern uint16_t myBLACK;
 
-uint8_t colorPos2 = 0;
+static uint8_t colorPos2 = 0;
   
-float line1pos[2] = {128,30};
-float line1vel[2] = {0.1,0.1};
-float line2pos[2] = {128, 34};
-float line2vel[2] = {-0.1, -0.1};
+static float line1pos[2] = {128,30};
+static float line1vel[2] = {0.1,0.1};
+static float line2pos[2] = {128, 34};
+static float line2vel[2] = {-0.1, -0.1};
 
   //Draws a line in a psychedelic sort of way.
 void lineRocker(){

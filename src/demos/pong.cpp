@@ -4,12 +4,12 @@ extern MatrixPanel_I2S_DMA *dma_display;
 extern uint16_t myBLACK;
 extern uint16_t myWHITE;
 
-uint16_t pongScore[2] = {0,0};
+static uint16_t pongScore[2] = {0,0};
 
-Paddle left_paddle = {PANEL_RES_Y / 2 - PADDLE_HEIGHT / 2, 1};
-Paddle right_paddle = {PANEL_RES_Y / 2 - PADDLE_HEIGHT / 2, -1};
+static Paddle left_paddle = {PANEL_RES_Y / 2 - PADDLE_HEIGHT / 2, 1};
+static Paddle right_paddle = {PANEL_RES_Y / 2 - PADDLE_HEIGHT / 2, -1};
 
-Ball ball = {PANEL_TOTAL_X / 2, PANEL_RES_Y / 2, 1, 1};
+static Ball ball = {PANEL_TOTAL_X / 2, PANEL_RES_Y / 2, 1, 1};
 
 void pongScoreDisplayer(){
     dma_display->setTextWrap(false);

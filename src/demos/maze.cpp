@@ -3,14 +3,14 @@
 #include <queue>
 #include <array>
 
-uint8_t mazeGrid[PANEL_TOTAL_X][PANEL_RES_Y];
+static uint8_t mazeGrid[PANEL_TOTAL_X][PANEL_RES_Y];
 // 0 = path
 // 1 = wall
 // 2 = unfilled
 
-std::stack<Point> mazeStack;
+static std::stack<Point> mazeStack;
 
-uint8_t colorPos4 = 0;
+static uint8_t colorPos4 = 0;
 
 void mazeDFS(bool solving);
 

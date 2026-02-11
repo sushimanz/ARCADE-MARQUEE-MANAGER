@@ -6,7 +6,7 @@
 extern MatrixPanel_I2S_DMA *dma_display;
 extern uint16_t myBLACK;
 
-std::list<Snake> snakes;
+static std::list<Snake> snakes;
 
 
 void init_snake(){

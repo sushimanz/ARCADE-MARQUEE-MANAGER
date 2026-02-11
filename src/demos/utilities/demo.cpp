@@ -3,7 +3,7 @@
 //This is where you add your demo, or modify the playback and set of existing demos.
 
 //The setup of the Demo struct is as follows:
-//Demo(demo_name, time_in_ms, optional_reset_func, optional_exit_func)
+//Demo(demo_loop, time_in_ms, optional_reset_func, optional_exit_func)
 //if you have no reset function, enter "nothing", if no exit condition, enter "noexitcond"
 
 // std::vector<Demo> demos = {
