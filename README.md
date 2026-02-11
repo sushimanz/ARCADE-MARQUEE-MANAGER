@@ -138,6 +138,10 @@ dma_display->color565(0, 0, 0)
 ``
 - By typing "dma_display->" in a code editor such as VSCode, you will see many different functions, to type them and what they do. Some key ones are "drawPixel" and "fillScreen". I encourage you to look through other written demos to get an idea of some of the things you can do with the MatrixPanel_I2S_DMA library!
 
+- This library does not automatically clear the screen. It is rudimentary. If you draw a circle at a location, the screen will stay that way until you manually remove that circle by writing over it with black. There is no built-in layering.
+
+- Frustratingly, there is no getPixel. When you write a pixel to the display, it's out there and it's not coming back. If you want to modify screen state based upon what is currently being displayed, you need to make a buffer and do an O(n^2) operation of writing all pixel values to that buffer as you do everything you do. If you want an example of me doing this successfully, take a look at conway.cpp. For individual pixel writing this is not a big deal, but for drawing text or shapes, you're largely out of luck without an insane amount of overhead. Good luck and get creative. 
+
 - Define your globals statically and within your .cpp file, not the .h file! Don't clog up the global name space of the entire project!!!
 
 ### 4. Add your function to demo.h
