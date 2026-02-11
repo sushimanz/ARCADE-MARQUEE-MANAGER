@@ -1,6 +1,8 @@
 # ARCADE MARQUEE MANAGER
 
-The demos for the marquee, designed by Enzo Mclauchlin for the IEEE 2025/26 arcade machine project.
+The demos for the marquee, designed primarily by Enzo Mclauchlin for the IEEE 2025/26 arcade machine project.
+
+[![](https://img.youtube.com/vi/rhOPqZoNJnE/maxresdefault.jpg)](https://www.youtube.com/watch?v=rhOPqZoNJnE)
 
 ## Table of Contents
 
@@ -10,7 +12,7 @@ The demos for the marquee, designed by Enzo Mclauchlin for the IEEE 2025/26 arca
 - [Writing Your Own Demos](#coding)
 - [Help and Documentation](#help)
 
-## Requirements
+## Requirements <a name="requirements"></a>
 
 #### Required software:
 - PlatformIO
@@ -24,7 +26,7 @@ The demos for the marquee, designed by Enzo Mclauchlin for the IEEE 2025/26 arca
 - Wires for ESP32 to HUB75 connection
 - Appropriate power supply for HUB75 panels
 
-## Setup and Usage
+## Setup and Usage <a name="usage"></a>
 
 ### Hardware setup:
 Ensure that your ESP32 is properly plugged into your matrix panels, and if you are using multiple matrix panels and wiring in series then wire them in series beforehand. Waveshare details how to go about this in their page detailing their matrix panels under ["Working with ESP32"](https://www.waveshare.com/wiki/RGB-Matrix-P3-64x64).
@@ -52,7 +54,7 @@ And if you want to open a serial monitor:
 pio device monitor
 ```
 
-## Project Layout
+## Project Layout <a name="layout"></a>
 
 ### File structure:
 ```
@@ -71,7 +73,7 @@ platformio.ini → Project configuration (don't touch unless you have to)
 └───output      → (unutilized)
 ```
 
-## Writing Your Own Demos
+## Writing Your Own Demos <a name="coding"></a>
 
 I have made a concentrated effort to make contributing your own demo for this project as simple as possible, though it is still not so obvious. This will walk you through the steps of adding your own demo to the project, and I reccomend reading it through *before* creating your demo.
 
@@ -132,7 +134,7 @@ If you desire, you can also just loop in the function itself in the first call, 
 
 - X and Y grow *downwards*. This means that the top left pixel is (0, 0), and the bottom right is (255, 63). This was not my choice, and I dislike it too. Try not to forget this, it's a very easy mistake to make and an annoying one to fix.
 
-- colors are defined as follows, using black as an example: 
+- Colors are defined as follows, using black as an example: 
 ``
 dma_display->color565(0, 0, 0)
 ``
@@ -172,9 +174,10 @@ Simply place your demo inside this in the following format:
 ``
 Demo(demo_loop, time_in_ms, optional_reset_func, optional_exit_func)
 ``
+
 And that's it! You're ready to test your function!
 
-## Help and Documentation
+## Help and Documentation <a name="help"></a>
 If you are struggling or need assistance, or even just wanna talk about ideas for the project, don't hesitate to contact me!
 Discord: @SilverStar555
 email: enzomcla@buffalo.edu
