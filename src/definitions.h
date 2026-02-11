@@ -1,0 +1,9 @@
+#ifndef DEFINITIONS_H
+#define DEFINITIONS_H
+
+#define PANEL_RES_X 64
+#define PANEL_RES_Y 64
+#define PANEL_CHAIN 4
+#define PANEL_TOTAL_X (PANEL_RES_X * PANEL_CHAIN)
+
+#endif

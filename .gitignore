@@ -1,0 +1,13 @@
+.pio/
+.pioenvs/
+.piolibdeps/
+.clang_complete
+.gcc-flags.json
+.vscode/
+.vscode/.browse.c_cpp.db*
+*.o
+*.bin
+*.elf
+*.map
+.DS_Store
+Thumbs.db
