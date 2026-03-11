@@ -31,7 +31,7 @@ The demos for the marquee, designed primarily by Enzo Mclauchlin for the IEEE 20
 ### Hardware setup:
 Ensure that your ESP32 is properly plugged into your matrix panels, and if you are using multiple matrix panels and wiring in series then wire them in series beforehand. Waveshare details how to go about this in their page detailing their matrix panels under ["Working with ESP32"](https://www.waveshare.com/wiki/RGB-Matrix-P3-64x64).
 
-Technically, there is baked-in support on most demos for panels which are not of 256x64 dimensions. This is more buggy and untested, though I have reason to believe that panels that maintain a height of 64 pixels will generally work across the board. To accomodate a different display side, upon cloning the project, change PANEL_RES_X, PANEL_RES_Y and PANEL_CHAIN (that being the number of panels changed, and the X and Y definitions being for a single panel in that chain) accordingly to your specifications.
+Technically, there is baked-in support on most demos for panels which are not of 256x64 dimensions. This is more buggy and untested, though I have reason to believe that panels that maintain a height of 64 pixels will generally work across the board. To accomodate a different display side, upon cloning the project, change ``PANEL_RES_X``, ``PANEL_RES_Y`` and ``PANEL_CHAIN`` (that being the number of panels changed, and the X and Y definitions being for a single panel in that chain) accordingly to your specifications.
 
 If you are using Windows, you may need to find the required driver for your matrix panel. If you are using Linux, most matrix panels should function without the need for any drivers. Ensure you are using a good data cable for uploading the code from your PC to the ESP32.
 
@@ -121,7 +121,7 @@ I will make an effort not to jump ahead here, but as simply as I can put, there 
 #### The reset function (OPTIONAL):
 The start of your demo. When your demo is selected to run, this will run once before anything else. This can be used to reset the state of your demo, setting variables to start as needed, resetting your exit condition, whatever it might be that you need to do.
 #### The exit function (OPTIONAL):
-The catch of your function. By default there is a timer in the Demo struct, and this is unremovable. However, if you desire to make an exit function, you can set your timer to be a very long time (I will get into this more later when I discuss that struct). Your exit function will run repeatedly before your "primary" function starts and must return true if it intends to exit the demo, and return false otherwise. You can make a global boolean which is 
+The catch of your function. By default there is a timer in the Demo struct, and this is unremovable. However, if you desire to make an exit function, you can set your timer to be a very long time (I will get into this more later when I discuss that struct). Your exit function will run repeatedly before your "primary" function starts and must return true if it intends to exit the demo, and return false otherwise. You can define a static boolean which will act as your exit condition, update it in your primary loop (see below) and have the exit function be tripped by this boolean.
 
 #### The "primary" function:
 The "meat" of your demo. When your demo is selected to run, after your reset function is run (if you have one), this function will repeatedly run until either the set time for your demo elapses or your exit condition is met. By repeatedly, I mean as fast as the ESP32 can possibly run through your code, unless you use Delay(ms). This can be used to limit the framerate / the speed that the demo runs at.
@@ -130,7 +130,7 @@ If you desire, you can also just loop in the function itself in the first call, 
 
 #### *Here are some other key pieces of information worth keeping in mind while writing*:
 
-- There are definitions in definitions.h, and if you want your code to function with every possible program, here's how to do so: PANEL_TOTAL_X is your screen width, and PANEL_RES_Y is your screen height. I would generally speaking advise against using PANEL_RES_X, this is the resolution of *one panel*, not all of them. As you may be able to tell, there is currently no support for chaining panels below each other, only side to side. That is the reason for this somewhat odd nomenclature.
+- There are definitions in definitions.h, and if you want your code to function with every possible program, here's how to do so: ``PANEL_TOTAL_X`` is your screen width, and ``PANEL_RES_Y`` is your screen height. I would generally speaking advise against using ``PANEL_RES_X``, this is the resolution of *one panel*, not all of them. As you may be able to tell, there is currently no support for chaining panels below each other, only side to side. That is the reason for this somewhat odd nomenclature.
 
 - X and Y grow *downwards*. This means that the top left pixel is (0, 0), and the bottom right is (255, 63). This was not my choice, and I dislike it too. Try not to forget this, it's a very easy mistake to make and an annoying one to fix.
 
@@ -138,7 +138,7 @@ If you desire, you can also just loop in the function itself in the first call, 
 ``
 dma_display->color565(0, 0, 0)
 ``
-- By typing "dma_display->" in a code editor such as VSCode, you will see many different functions, to type them and what they do. Some key ones are "drawPixel" and "fillScreen". I encourage you to look through other written demos to get an idea of some of the things you can do with the MatrixPanel_I2S_DMA library!
+- By typing ``dma_display->`` in a code editor such as VSCode, you will see many different functions, to type them and what they do. Some important ones are ``drawPixel`` and ``fillScreen``. I encourage you to look through other written demos to get an idea of some of the things you can do with the MatrixPanel_I2S_DMA library!
 
 - This library does not automatically clear the screen. It is rudimentary. If you draw a circle at a location, the screen will stay that way until you manually remove that circle by writing over it with black. There is no built-in layering.
 
@@ -178,9 +178,6 @@ Demo(demo_loop, time_in_ms, optional_reset_func, optional_exit_func)
 And that's it! You're ready to test your function!
 
 ## Help and Documentation <a name="help"></a>
-If you are struggling or need assistance, or even just wanna talk about ideas for the project, don't hesitate to contact me!
-Discord: @SilverStar555
-email: enzomcla@buffalo.edu
 
 Helpful quick starts and guides:
 
