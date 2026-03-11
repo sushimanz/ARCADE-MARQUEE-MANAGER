@@ -29,7 +29,7 @@ The demos for the marquee, designed primarily by Enzo Mclauchlin for the IEEE 20
 ## Setup and Usage <a name="usage"></a>
 
 ### Hardware setup:
-Ensure that your ESP32 is properly plugged into your matrix panels, and if you are using multiple matrix panels and wiring in series then wire them in series beforehand. Waveshare details how to go about this in their page detailing their matrix panels under ["Working with ESP32"](https://www.waveshare.com/wiki/RGB-Matrix-P3-64x64).
+Ensure that your ESP32 is properly plugged into your matrix panels, and if you are using multiple matrix panels and wiring in series then wire them in series beforehand. Waveshare details how to go about this in their page detailing their matrix panels under ["Working with ESP32"](https://www.waveshare.com/wiki/RGB-Matrix-P3-64x64#Working_With_ESP32).
 
 Technically, there is baked-in support on most demos for panels which are not of 256x64 dimensions. This is more buggy and untested, though I have reason to believe that panels that maintain a height of 64 pixels will generally work across the board. To accomodate a different display side, upon cloning the project, change ``PANEL_RES_X``, ``PANEL_RES_Y`` and ``PANEL_CHAIN`` (that being the number of panels changed, and the X and Y definitions being for a single panel in that chain) accordingly to your specifications.
 
@@ -182,4 +182,5 @@ And that's it! You're ready to test your function!
 Helpful quick starts and guides:
 
 [mrcodetastic - ESP32 HUB75 Features and (better) Quick-Start Guide](https://github.com/mrcodetastic/ESP32-HUB75-MatrixPanel-DMA/blob/master/README.md)
-[WaveShare - 64x64 HUB75 Matrix Overview](https://www.waveshare.com/wiki/RGB-Matrix-P3-64x64)
+
+[WaveShare - 64x64 HUB75 Matrix Overview](https://www.waveshare.com/wiki/RGB-Matrix-P3-64x64#Working_With_ESP32)
