@@ -1,0 +1,15 @@
+[2026-03-25 16:22:23] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-25 16:24:14] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-25 16:24:32] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-25 16:25:07] SUCCESS: Sent exit-image-mode signal to /dev/ttyS2
+[2026-03-25 16:25:13] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-25 16:28:08] SUCCESS: Sent exit-image-mode signal to /dev/ttyS2
+[2026-03-30 15:16:44] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-30 15:16:51] SUCCESS: Sent exit-image-mode signal to /dev/ttyS2
+[2026-03-30 15:16:54] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-30 15:17:02] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-30 15:17:05] SUCCESS: Sent exit-image-mode signal to /dev/ttyS2
+[2026-03-30 15:17:12] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-30 15:17:31] SUCCESS: Sent exit-image-mode signal to /dev/ttyS2
+[2026-03-30 15:18:08] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/ImageSendTesters/StartStopTest/test.png to /dev/ttyS2
+[2026-03-30 15:18:11] SUCCESS: Sent exit-image-mode signal to /dev/ttyS2

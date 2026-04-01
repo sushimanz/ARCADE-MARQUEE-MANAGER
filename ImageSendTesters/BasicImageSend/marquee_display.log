@@ -1,0 +1,364 @@
+[2026-03-25 14:37:36] ======================================
+[2026-03-25 14:37:36] Git Bash Marquee Send Start
+[2026-03-25 14:37:36] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 14:37:36] Port:  COM3
+[2026-03-25 14:37:36] ======================================
+[2026-03-25 14:37:36] [DEBUG] About to check ffmpeg...
+[2026-03-25 14:37:36] [DEBUG] Attempting to acquire lock...
+[2026-03-25 14:37:36] [DEBUG] Lock acquired successfully
+[2026-03-25 14:37:36] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 14:37:36] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 14:37:36] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 14:37:36] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 14:37:36] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 14:37:36] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 14:37:36] [DEBUG-CFG] Skipping stty, returning success
+[2026-03-25 14:37:36] [DEBUG] Serial port configured successfully
+[2026-03-25 14:37:36] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 14:37:36] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 14:37:37] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 14:37:37] [DEBUG] Sending sync byte 0x42
+[2026-03-25 14:37:37] [DEBUG] Sync byte sent, waiting 0.1s
+[2026-03-25 14:37:37] [DEBUG] Beginning chunked payload stream
+[2026-03-25 14:37:47] [DEBUG] Sent 64 full chunks + 0 remainder bytes
+[2026-03-25 14:37:47] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 14:37:47] [DEBUG] Serial FD closed successfully
+[2026-03-25 14:37:48] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:12:22] ======================================
+[2026-03-25 15:12:22] Git Bash Marquee Send Start
+[2026-03-25 15:12:22] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:12:22] Port:  COM3
+[2026-03-25 15:12:22] ======================================
+[2026-03-25 15:12:22] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:12:22] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:12:22] [DEBUG] Lock acquired successfully
+[2026-03-25 15:12:22] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:12:22] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:12:22] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:12:22] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:12:22] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:12:22] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:12:22] [DEBUG-CFG] Skipping stty, returning success
+[2026-03-25 15:12:22] [DEBUG] Serial port configured successfully
+[2026-03-25 15:12:22] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:12:22] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:12:24] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:12:24] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:12:24] [DEBUG] Sync byte sent, waiting 0.1s
+[2026-03-25 15:12:24] [DEBUG] Beginning chunked payload stream
+[2026-03-25 15:12:32] [DEBUG] Sent 64 full chunks + 0 remainder bytes
+[2026-03-25 15:12:32] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:12:32] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:12:32] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:12:50] ======================================
+[2026-03-25 15:12:50] Git Bash Marquee Send Start
+[2026-03-25 15:12:50] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:12:50] Port:  COM3
+[2026-03-25 15:12:50] ======================================
+[2026-03-25 15:12:50] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:12:50] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:12:50] [DEBUG] Lock acquired successfully
+[2026-03-25 15:12:50] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:12:50] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:12:50] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:12:50] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:12:50] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:12:50] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:12:50] [DEBUG-CFG] Skipping stty, returning success
+[2026-03-25 15:12:50] [DEBUG] Serial port configured successfully
+[2026-03-25 15:12:50] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:12:50] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:12:50] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:12:50] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:12:51] [DEBUG] Sync byte sent, waiting 0.1s
+[2026-03-25 15:12:51] [DEBUG] Beginning chunked payload stream
+[2026-03-25 15:12:58] [DEBUG] Sent 64 full chunks + 0 remainder bytes
+[2026-03-25 15:12:58] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:12:58] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:12:58] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:18:54] ======================================
+[2026-03-25 15:18:54] Git Bash Marquee Send Start
+[2026-03-25 15:18:54] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:18:54] Port:  COM3
+[2026-03-25 15:18:54] ======================================
+[2026-03-25 15:18:54] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:18:54] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:18:54] [DEBUG] Lock acquired successfully
+[2026-03-25 15:18:54] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:18:54] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:18:54] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:18:54] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:18:54] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:18:54] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:18:54] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:18:54] [DEBUG] Serial port configured successfully
+[2026-03-25 15:18:54] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:18:54] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:18:55] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:18:55] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:18:55] [DEBUG] Sync byte sent, waiting 0.1s
+[2026-03-25 15:18:55] [DEBUG] Beginning chunked payload stream
+[2026-03-25 15:19:00] [DEBUG] Sent 64 full chunks + 0 remainder bytes
+[2026-03-25 15:19:00] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:19:00] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:19:00] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:20:35] ======================================
+[2026-03-25 15:20:35] Git Bash Marquee Send Start
+[2026-03-25 15:20:35] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:20:35] Port:  COM3
+[2026-03-25 15:20:35] ======================================
+[2026-03-25 15:20:35] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:20:35] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:20:35] [DEBUG] Lock acquired successfully
+[2026-03-25 15:20:35] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:20:35] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:20:35] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:20:35] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:20:35] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:20:35] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:20:35] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:20:35] [DEBUG] Serial port configured successfully
+[2026-03-25 15:20:35] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:20:35] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:20:36] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:20:36] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:20:36] [DEBUG] Sync byte sent, waiting 0.1s
+[2026-03-25 15:20:36] [DEBUG] Beginning chunked payload stream
+[2026-03-25 15:20:40] [DEBUG] Sent 64 full chunks + 0 remainder bytes
+[2026-03-25 15:20:40] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:20:40] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:20:40] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:22:51] ======================================
+[2026-03-25 15:22:51] Git Bash Marquee Send Start
+[2026-03-25 15:22:51] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:22:51] Port:  COM3
+[2026-03-25 15:22:51] ======================================
+[2026-03-25 15:22:51] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:22:51] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:22:51] [DEBUG] Lock acquired successfully
+[2026-03-25 15:22:51] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:22:51] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:22:51] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:22:51] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:22:51] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:22:51] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:22:51] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:22:51] [DEBUG] Serial port configured successfully
+[2026-03-25 15:22:51] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:22:51] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:22:51] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:22:52] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:22:52] [DEBUG] Sync byte sent, waiting 0.1s
+[2026-03-25 15:22:52] [DEBUG] Beginning chunked payload stream
+[2026-03-25 15:22:57] [DEBUG] Sent 64 full chunks + 0 remainder bytes
+[2026-03-25 15:22:57] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:22:57] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:22:57] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:23:18] ======================================
+[2026-03-25 15:23:18] Git Bash Marquee Send Start
+[2026-03-25 15:23:18] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:23:18] Port:  COM3
+[2026-03-25 15:23:18] ======================================
+[2026-03-25 15:23:18] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:23:18] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:23:18] [DEBUG] Lock acquired successfully
+[2026-03-25 15:23:18] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:23:18] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:23:18] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:23:18] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:23:18] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:23:18] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:23:18] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:23:18] [DEBUG] Serial port configured successfully
+[2026-03-25 15:23:18] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:23:18] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:23:18] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:23:18] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:23:18] [DEBUG] Sync byte sent, waiting 0.1s
+[2026-03-25 15:23:19] [DEBUG] Beginning chunked payload stream
+[2026-03-25 15:23:24] [DEBUG] Sent 64 full chunks + 0 remainder bytes
+[2026-03-25 15:23:24] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:23:24] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:23:24] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:27:56] ======================================
+[2026-03-25 15:27:56] Git Bash Marquee Send Start
+[2026-03-25 15:27:56] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:27:56] Port:  COM3
+[2026-03-25 15:27:56] ======================================
+[2026-03-25 15:27:56] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:27:56] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:27:56] [DEBUG] Lock acquired successfully
+[2026-03-25 15:27:56] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:27:56] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:27:56] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:27:56] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:27:57] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:27:57] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:27:57] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:27:57] [DEBUG] Serial port configured successfully
+[2026-03-25 15:27:57] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:27:57] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:27:57] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:27:57] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:27:57] [DEBUG] Sync byte sent, waiting 0.1s
+[2026-03-25 15:27:58] [DEBUG] Beginning chunked payload stream
+[2026-03-25 15:28:02] [DEBUG] Sent 64 full chunks + 0 remainder bytes
+[2026-03-25 15:28:02] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:28:02] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:28:02] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:33:17] ======================================
+[2026-03-25 15:33:17] Git Bash Marquee Send Start
+[2026-03-25 15:33:18] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:33:18] Port:  COM3
+[2026-03-25 15:33:18] ======================================
+[2026-03-25 15:33:18] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:33:18] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:33:18] [DEBUG] Lock acquired successfully
+[2026-03-25 15:33:18] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:33:18] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:33:18] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:33:18] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:33:18] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:33:18] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:33:18] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:33:18] [DEBUG] Serial port configured successfully
+[2026-03-25 15:33:18] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:33:18] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:33:18] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:33:18] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:33:18] [DEBUG] Sync byte sent, waiting 0.01s
+[2026-03-25 15:33:18] [DEBUG] Beginning direct payload stream
+[2026-03-25 15:33:19] [DEBUG] Sent 49152 payload bytes
+[2026-03-25 15:33:19] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:33:19] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:33:19] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:38:26] ======================================
+[2026-03-25 15:38:26] Git Bash Marquee Send Start
+[2026-03-25 15:38:26] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:38:26] Port:  COM3
+[2026-03-25 15:38:26] ======================================
+[2026-03-25 15:38:26] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:38:26] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:38:26] [DEBUG] Lock acquired successfully
+[2026-03-25 15:38:26] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:38:27] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:38:27] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:38:27] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:38:27] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:38:27] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:38:27] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:38:27] [DEBUG] Serial port configured successfully
+[2026-03-25 15:38:27] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:38:27] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:38:27] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:38:27] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:38:27] [DEBUG] Sync byte sent, waiting 0.01s
+[2026-03-25 15:38:27] [DEBUG] Beginning direct payload stream
+[2026-03-25 15:38:28] [DEBUG] Sent 49152 payload bytes
+[2026-03-25 15:38:28] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:38:28] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:38:28] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:39:16] ======================================
+[2026-03-25 15:39:16] Git Bash Marquee Send Start
+[2026-03-25 15:39:16] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/image.png
+[2026-03-25 15:39:16] Port:  COM3
+[2026-03-25 15:39:16] ======================================
+[2026-03-25 15:39:16] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:39:16] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:39:16] [DEBUG] Lock acquired successfully
+[2026-03-25 15:39:16] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/image.png and COM3
+[2026-03-25 15:39:16] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/image.png, port=COM3
+[2026-03-25 15:39:17] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/image.png
+[2026-03-25 15:39:17] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:39:17] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:39:17] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:39:17] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:39:17] [DEBUG] Serial port configured successfully
+[2026-03-25 15:39:17] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/image.png
+[2026-03-25 15:39:17] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:39:17] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:39:17] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:39:17] [DEBUG] Sync byte sent, waiting 0.01s
+[2026-03-25 15:39:17] [DEBUG] Beginning direct payload stream
+[2026-03-25 15:39:18] [DEBUG] Sent 49152 payload bytes
+[2026-03-25 15:39:18] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:39:18] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:39:18] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/image.png to /dev/ttyS2
+[2026-03-25 15:39:48] ======================================
+[2026-03-25 15:39:48] Git Bash Marquee Send Start
+[2026-03-25 15:39:48] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:39:48] Port:  COM3
+[2026-03-25 15:39:48] ======================================
+[2026-03-25 15:39:48] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:39:48] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:39:48] [DEBUG] Lock acquired successfully
+[2026-03-25 15:39:48] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png and COM3
+[2026-03-25 15:39:48] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png, port=COM3
+[2026-03-25 15:39:48] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:39:48] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:39:48] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:39:48] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:39:48] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:39:48] [DEBUG] Serial port configured successfully
+[2026-03-25 15:39:48] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png
+[2026-03-25 15:39:48] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:39:49] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:39:49] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:39:49] [DEBUG] Sync byte sent, waiting 0.01s
+[2026-03-25 15:39:49] [DEBUG] Beginning direct payload stream
+[2026-03-25 15:39:49] [DEBUG] Sent 49152 payload bytes
+[2026-03-25 15:39:49] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:39:49] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:39:49] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/test.png to /dev/ttyS2
+[2026-03-25 15:42:39] ======================================
+[2026-03-25 15:42:39] Git Bash Marquee Send Start
+[2026-03-25 15:42:39] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/t2.png
+[2026-03-25 15:42:39] Port:  COM3
+[2026-03-25 15:42:39] ======================================
+[2026-03-25 15:42:39] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:42:39] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:42:39] [DEBUG] Lock acquired successfully
+[2026-03-25 15:42:39] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/t2.png and COM3
+[2026-03-25 15:42:39] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/t2.png, port=COM3
+[2026-03-25 15:42:39] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/t2.png
+[2026-03-25 15:42:39] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:42:39] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:42:39] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:42:39] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:42:39] [DEBUG] Serial port configured successfully
+[2026-03-25 15:42:39] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/t2.png
+[2026-03-25 15:42:39] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:42:39] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:42:39] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:42:39] [DEBUG] Sync byte sent, waiting 0.01s
+[2026-03-25 15:42:39] [DEBUG] Beginning direct payload stream
+[2026-03-25 15:42:40] [DEBUG] Sent 49152 payload bytes
+[2026-03-25 15:42:40] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:42:40] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:42:40] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/t2.png to /dev/ttyS2
+[2026-03-25 15:52:27] ======================================
+[2026-03-25 15:52:27] Git Bash Marquee Send Start
+[2026-03-25 15:52:27] Image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/neobombe.png
+[2026-03-25 15:52:27] Port:  COM3
+[2026-03-25 15:52:27] ======================================
+[2026-03-25 15:52:27] [DEBUG] About to check ffmpeg...
+[2026-03-25 15:52:27] [DEBUG] Attempting to acquire lock...
+[2026-03-25 15:52:27] [DEBUG] Lock acquired successfully
+[2026-03-25 15:52:27] [DEBUG] Calling send_image() with /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/neobombe.png and COM3
+[2026-03-25 15:52:27] [DEBUG] send_image() called with img_path=/c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/neobombe.png, port=COM3
+[2026-03-25 15:52:27] [DEBUG] Checking if image file exists: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/neobombe.png
+[2026-03-25 15:52:27] [DEBUG] Image file found, calling find_device()...
+[2026-03-25 15:52:28] [DEBUG] find_device returned: /dev/ttyS2
+[2026-03-25 15:52:28] [DEBUG] Calling configure_serial_port()...
+[2026-03-25 15:52:28] [WARN-CFG] stty configuration failed for /dev/ttyS2, continuing
+[2026-03-25 15:52:28] [DEBUG] Serial port configured successfully
+[2026-03-25 15:52:28] Processing image: /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/neobombe.png
+[2026-03-25 15:52:28] [DEBUG] FFmpeg conversion starting...
+[2026-03-25 15:52:28] [DEBUG] FFmpeg conversion complete, opening serial device
+[2026-03-25 15:52:28] [DEBUG] Sending sync byte 0x42
+[2026-03-25 15:52:28] [DEBUG] Sync byte sent, waiting 0.01s
+[2026-03-25 15:52:28] [DEBUG] Beginning direct payload stream
+[2026-03-25 15:52:28] [DEBUG] Sent 49152 payload bytes
+[2026-03-25 15:52:29] [DEBUG] Payload stream complete, closing serial FD
+[2026-03-25 15:52:29] [DEBUG] Serial FD closed successfully
+[2026-03-25 15:52:29] SUCCESS: Sent image /c/Users/sushi/OneDrive/Documents/IEEEArcade/ARCADE-MARQUEE-MANAGER/neobombe.png to /dev/ttyS2

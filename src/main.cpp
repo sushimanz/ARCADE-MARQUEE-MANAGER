@@ -19,6 +19,8 @@
 #include "demos/utilities/demo.h"
 #include "definitions.h"
 
+#include "serialCom/serialMan.h"
+
 MatrixPanel_I2S_DMA *dma_display = nullptr;
 
 uint16_t myBLACK = dma_display->color565(0, 0, 0);
@@ -78,18 +80,45 @@ void setup() {
   demoStartTime = millis();
 
   demos[currentDemo].resetFunc();
+
+  //serial config
+  Serial.setRxBufferSize(16384);
+  Serial.begin(1500000);
 }
 
 void loop() {
-  demos[currentDemo].runFunc();
-  dma_display->flipDMABuffer();
-
-  if(millis() - demoStartTime >= demos[currentDemo].duration || demos[currentDemo].exitCond()) {
-    if(bagSize == 0) {
-      refillBag();
-    }
-    currentDemo = drawFromBag();
-    demoStartTime = millis();
+  // Check if we just exited image display mode
+  if (checkAndClearExitFlag()) {
+    // Quick drain of any stale serial data, then resume demos
+    flushSerialInput();
+    // Clear screen and reset current demo
+    dma_display->clearScreen();
     demos[currentDemo].resetFunc();
+    demoStartTime = millis();
+    // Resync FreeRTOS scheduler
+    vTaskDelay(1);
   }
+  
+  // Check if we're displaying a serial image
+  if (!isInImageDisplayMode()) {
+    // Normal demo mode
+    demos[currentDemo].runFunc();
+    dma_display->flipDMABuffer();
+
+    if(millis() - demoStartTime >= demos[currentDemo].duration || demos[currentDemo].exitCond()) {
+      if(bagSize == 0) {
+        refillBag();
+      }
+      currentDemo = drawFromBag();
+      demoStartTime = millis();
+      demos[currentDemo].resetFunc();
+    }
+  } else {
+    // Image display mode - just keep the image on screen
+    // No need to run demos or flip buffer
+    delayMicroseconds(100); // Minimal sleep to reduce busy-wait
+  }
+
+  //serial communication
+  handleSerialComm();
 }

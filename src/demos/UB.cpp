@@ -29,7 +29,7 @@ void UB(uint8_t colorPos){
     "Cabinet designed by Ronny Cole, ____, and ____", //I dont remember peoples last names, and also first names. Apologies, -Enzo
     "Project lead by Fabien Habiyambere",
     "Shoutouts to Austin and Eric the GOATs!",
-    "Batocera setup and PC configuration by Steven _____ and Enzo Mclauchlin",
+    "Batocera setup and PC configuration by Ryan Eason and Enzo Mclauchlin",
     "I LOVE BRIDGING HARDWARE AND SOFTWARE!!",
     "Take CSE 241, and take it with Ryan St. Pierre because he is awesome :)",
     "~~~ MICROCONTROLLERS ARE ABSOLUTELY TUBULAR ~~"
