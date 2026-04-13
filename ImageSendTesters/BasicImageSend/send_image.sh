@@ -16,7 +16,7 @@
 
 # --- Configuration ---
 SERIAL_PORT="${SERIAL_PORT:-/dev/ttyUSB0}"
-BAUD_RATE="${BAUD_RATE:-1500000}"
+BAUD_RATE="${BAUD_RATE:-1000000}"
 WIDTH=256   # 4 panels × 64
 HEIGHT=64   # Panel height
 SYNC_BYTE='\x42'

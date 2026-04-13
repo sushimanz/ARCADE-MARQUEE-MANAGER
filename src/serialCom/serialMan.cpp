@@ -7,12 +7,36 @@ extern MatrixPanel_I2S_DMA *dma_display;
 // Image display state
 static bool isDisplayingImage = false;
 static bool justExitedImageMode = false;
+static bool serialCommDisabled = false;
+static bool disableSerialOnNextExit = false;
+static const size_t SERIAL_GARBAGE_DRAIN_BUDGET = 512;
 
-static void flushSerialInput() {
+static bool sendAckByte(uint8_t ack, uint8_t repeatCount) {
+    bool wroteAny = false;
+    for (uint8_t i = 0; i < repeatCount; i++) {
+        size_t written = Serial.write(ack);
+        if (written == 1) {
+            wroteAny = true;
+        }
+    }
+    // Ensure tiny ACK bytes are pushed out before we continue processing.
+    Serial.flush();
+    return wroteAny;
+}
+
+void flushSerialInput() {
     // One-pass non-blocking drain: just clear what's currently available.
     // Don't loop or yield - that can alter FreeRTOS scheduler state.
     while (Serial.available() > 0) {
         Serial.read();
+    }
+}
+
+static void flushSerialInputBudget(size_t maxBytes) {
+    size_t drained = 0;
+    while (Serial.available() > 0 && drained < maxBytes) {
+        Serial.read();
+        drained++;
     }
 }
 
@@ -27,6 +51,7 @@ static bool waitForSerialData(unsigned long timeoutMs) {
 }
 
 static bool receiveAndDrawImage() {
+
     int totalWidth = PANEL_TOTAL_X;
     int totalHeight = PANEL_RES_Y;
     unsigned long expectedBytes = (unsigned long)totalWidth * totalHeight * 3;
@@ -38,9 +63,18 @@ static bool receiveAndDrawImage() {
     uint8_t g = 0;
     uint8_t rxBuffer[SERIAL_RX_CHUNK_SIZE];
 
+    if (!waitForSerialData(SERIAL_INITIAL_CHUNK_TIMEOUT_MS)) {
+        return false;
+    }
+
+    unsigned long lastByteMs = millis();
+
     while (receivedBytes < expectedBytes) {
-        if (!waitForSerialData(SERIAL_CHUNK_TIMEOUT_MS)) {
-            return false;
+        if (Serial.available() == 0) {
+            if (millis() - lastByteMs > SERIAL_INTERBYTE_TIMEOUT_MS) {
+                return false;
+            }
+            continue;
         }
 
         size_t toRead = Serial.available();
@@ -53,6 +87,7 @@ static bool receiveAndDrawImage() {
             return false;
         }
 
+        lastByteMs = millis();
         receivedBytes += (unsigned long)got;
 
         for (int i = 0; i < got; i++) {
@@ -72,7 +107,9 @@ static bool receiveAndDrawImage() {
 
             int x = (int)(pixelIndex % totalWidth);
             int y = (int)(pixelIndex / totalWidth);
-            dma_display->drawPixelRGB888(x, y, r, g, value);
+            if (!SERIAL_RECEIVE_ONLY_NO_DRAW_TEST) {
+                dma_display->drawPixelRGB888(x, y, r, g, value);
+            }
             pixelIndex++;
             component = 0;
         }
@@ -92,6 +129,10 @@ static bool receiveAndDrawImage() {
 
 
 void handleSerialComm(){
+    if (serialCommDisabled) {
+        return;
+    }
+
     // Serial communication
     if (Serial.available() <= 0) {
         return;
@@ -104,35 +145,38 @@ void handleSerialComm(){
         isDisplayingImage = false;
         justExitedImageMode = true;
         flushSerialInput();
+        if (SERIAL_DISABLE_AFTER_ONE_TRANSFER_TEST && disableSerialOnNextExit) {
+            serialCommDisabled = true;
+            disableSerialOnNextExit = false;
+        }
         return;
     }
 
     if (syncByte != SERIAL_SYNC_BYTE) {
-        // Not a control byte. Drain garbage quickly so stale payload bytes don't throttle demo speed.
-        flushSerialInput();
+        // Not a control byte. Drain in bounded chunks so demos keep running smoothly.
+        flushSerialInputBudget(SERIAL_GARBAGE_DRAIN_BUDGET);
 
-        return;
-    }
-
-    // Sync byte detected. Guard against long waits:
-    // Only attempt image receive if we have substantial data queued OR we're already displaying an image.
-    // This prevents stray sync bytes from blocking the demo loop.
-    if (!isDisplayingImage && Serial.available() < SERIAL_MIN_IMAGE_BUFFER) {
-        // Stray sync with insufficient data; skip to avoid timeout.
         return;
     }
 
     Serial.read(); // Consume the sync byte.
+    // Send START ACK twice to improve host-side first-byte capture reliability.
+    sendAckByte(SERIAL_ACK_START_BYTE, 2);
     if (!receiveAndDrawImage()) {
         isDisplayingImage = false;
-        flushSerialInput(); // Flush remaining data from a failed transfer.
+        sendAckByte(SERIAL_ACK_FAIL_BYTE, 1);
+        // Failed transfer: clear residual payload immediately for a clean retry.
+        flushSerialInput();
         return;
     }
 
-    //dma_display->flipDMABuffer();
     // Hold image indefinitely until a new image or explicit exit byte arrives.
+    sendAckByte(SERIAL_ACK_DONE_BYTE, 1);
     isDisplayingImage = true;
     justExitedImageMode = false;
+    if (SERIAL_DISABLE_AFTER_ONE_TRANSFER_TEST) {
+        disableSerialOnNextExit = true;
+    }
 }
 
 bool isInImageDisplayMode() {

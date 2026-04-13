@@ -31,6 +31,8 @@ static uint8_t bagSize = 0;
 static uint8_t currentDemo = 0;
 static unsigned long demoStartTime = 0;
 
+static const bool FULL_LOOP_RESET_ON_IMAGE_EXIT = true;
+
 void refillBag() {
     bagSize = demos.size();
     for (uint8_t i = 0; i < bagSize; i++) {
@@ -52,6 +54,17 @@ uint8_t drawFromBag() {
     bagSize--;
 
     return demoID;
+}
+
+void resetDemoLoopBaseline() {
+  // Restore a known-good demo loop baseline without rebooting the board.
+  flushSerialInput();
+  dma_display->clearScreen();
+  refillBag();
+  currentDemo = drawFromBag();
+  demos[currentDemo].resetFunc();
+  demoStartTime = millis();
+  vTaskDelay(1);
 }
 
 
@@ -83,20 +96,22 @@ void setup() {
 
   //serial config
   Serial.setRxBufferSize(16384);
-  Serial.begin(1500000);
+  Serial.begin(1000000);
 }
 
 void loop() {
   // Check if we just exited image display mode
   if (checkAndClearExitFlag()) {
-    // Quick drain of any stale serial data, then resume demos
-    flushSerialInput();
-    // Clear screen and reset current demo
-    dma_display->clearScreen();
-    demos[currentDemo].resetFunc();
-    demoStartTime = millis();
-    // Resync FreeRTOS scheduler
-    vTaskDelay(1);
+    if (FULL_LOOP_RESET_ON_IMAGE_EXIT) {
+      resetDemoLoopBaseline();
+    } else {
+      // Quick drain of any stale serial data, then resume current demo
+      flushSerialInput();
+      dma_display->clearScreen();
+      demos[currentDemo].resetFunc();
+      demoStartTime = millis();
+      vTaskDelay(1);
+    }
   }
   
   // Check if we're displaying a serial image

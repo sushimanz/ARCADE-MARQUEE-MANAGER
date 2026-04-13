@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 LOG_FILE="$SCRIPT_DIR/marquee_display.log"
 
 SERIAL_PORT="${SERIAL_PORT:-COM3}"
-BAUD_RATE="${BAUD_RATE:-1500000}"
+BAUD_RATE="${BAUD_RATE:-1000000}"
 EXIT_IMAGE_MODE_BYTE='\x45'
 
 log() {
