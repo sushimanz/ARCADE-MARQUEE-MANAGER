@@ -1,6 +1,6 @@
 #!/bin/bash
 # Batocera game-start marquee sender.
-# Usage: ./send_image_start_batocera.sh <rom_path>
+# Usage: ./bat_start.sh <rom_path>
 
 set -euo pipefail
 

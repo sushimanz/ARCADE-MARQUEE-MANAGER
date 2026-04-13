@@ -77,9 +77,13 @@ static bool receiveAndDrawImage() {
             continue;
         }
 
+        unsigned long remainingBytes = expectedBytes - receivedBytes;
         size_t toRead = Serial.available();
         if (toRead > SERIAL_RX_CHUNK_SIZE) {
             toRead = SERIAL_RX_CHUNK_SIZE;
+        }
+        if ((unsigned long)toRead > remainingBytes) {
+            toRead = (size_t)remainingBytes;
         }
 
         int got = Serial.readBytes((char*)rxBuffer, toRead);

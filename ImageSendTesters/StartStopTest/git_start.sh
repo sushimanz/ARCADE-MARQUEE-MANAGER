@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Git Bash game-start sender.
-# Usage: ./send_image_start_gitbash.sh [image_path] [COMx|/dev/ttySx]
+# Usage: ./git_start.sh [image_path] [COMx|/dev/ttySx]
 
 set -euo pipefail
 

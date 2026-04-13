@@ -1,6 +1,6 @@
 #!/bin/bash
 # Batocera game-end marquee stop signal.
-# Usage: ./send_image_stop_batocera.sh
+# Usage: ./bat_stop.sh
 
 set -euo pipefail
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Git Bash game-end stop signal.
-# Usage: ./send_image_stop_gitbash.sh [COMx|/dev/ttySx]
+# Usage: ./git_stop.sh [COMx|/dev/ttySx]
 
 set -euo pipefail
 
